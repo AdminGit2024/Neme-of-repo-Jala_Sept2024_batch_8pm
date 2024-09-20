@@ -8,11 +8,11 @@ import org.testng.annotations.Test;
 
 public class Annotation {
 
-	@Test
+	@Test(groups = "sanity")
 	public void TC3() {
 		System.out.println("this is TC3");
 	}
-	@Test
+	@Test(groups = "Smoke")
 	public void TC6() {
 		System.out.println("this is TC6");
 	}
