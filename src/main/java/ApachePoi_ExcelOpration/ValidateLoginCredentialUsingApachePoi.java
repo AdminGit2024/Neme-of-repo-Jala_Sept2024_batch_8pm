@@ -35,7 +35,7 @@ public class ValidateLoginCredentialUsingApachePoi {
 			Thread.sleep(3000);
 			String actual = driver.getTitle();
 			System.out.println(actual);
-			
+			row.createCell(4).setCellValue(actual);
 			String expected = row.getCell(2).getStringCellValue();
 			
 			if(expected.equals(actual)) {
@@ -43,9 +43,6 @@ public class ValidateLoginCredentialUsingApachePoi {
 			}else {
 				row.createCell(4).setCellValue("failed");
 			}
-			
-			
-			
 			
 			
 			driver.close();
